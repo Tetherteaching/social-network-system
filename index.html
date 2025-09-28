@@ -279,21 +279,50 @@
 
         .contact-item {
             display: flex;
-            align-items: center;
-            margin-bottom: 20px;
+            align-items: flex-start;
+            margin-bottom: 25px;
             font-size: 1.1em;
         }
 
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
         .contact-icon {
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             background: #3498db;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 15px;
+            margin-right: 20px;
             color: white;
+            font-size: 18px;
+            flex-shrink: 0;
+            margin-top: 5px;
+        }
+
+        .contact-details {
+            flex: 1;
+            line-height: 1.6;
+        }
+
+        .contact-details strong {
+            display: block;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .contact-details br {
+            margin-bottom: 4px;
+        }
+
+        .contact-details hr {
+            margin: 8px 0;
+            border: none;
+            border-top: 1px solid #dee2e6;
         }
 
         .footer {
@@ -347,6 +376,12 @@
             .logo-container {
                 width: 150px;
                 height: 100px;
+            }
+
+            .contact-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 16px;
             }
         }
 
@@ -404,6 +439,22 @@
             .logo-container {
                 width: 130px;
                 height: 90px;
+            }
+
+            .contact-item {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+            }
+
+            .contact-icon {
+                margin-right: 0;
+                margin-bottom: 10px;
+                align-self: flex-start;
+            }
+
+            .contact-details {
+                width: 100%;
             }
         }
     </style>
@@ -508,19 +559,20 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-icon">📧</div>
-                        <div>
-                            <strong>Email:</strong><br>
+                        <div class="contact-details">
+                            <strong>Email:</strong>
                             info@socialnetworksystem.com<br>
-                            support@socialnetworksystem.com<br>
+                            support@socialnetworksystem.com
                             <hr>
-                            official email<br>socialnetworksystem@gmail.com
+                            <strong>Official Email:</strong>
+                            socialnetworksystem@gmail.com
                         </div>
                     </div>
                 
                     <div class="contact-item">
                         <div class="contact-icon">📱</div>
-                        <div>
-                            <strong>Phone:</strong><br>
+                        <div class="contact-details">
+                            <strong>Phone:</strong>
                             +91 8086214347<br>
                             +91 9496378325
                         </div>
@@ -528,29 +580,29 @@
                     
                     <div class="contact-item">
                         <div class="contact-icon">🏢</div>
-                        <div>
-                            <strong>Office Address:</strong><br>
+                        <div class="contact-details">
+                            <strong>Office Address:</strong>
                             Social Network System<br>
-                            1 st FLOOR KARALI COMPLEX<br>
+                            1st FLOOR KARALI COMPLEX<br>
                             TAKARAPARAMPBU<br>
                             THIRUVANANTHAPURAM, Kerala<br>
-                            (KL - 32), PIN Code<br>
-                            695008, India<br>
+                            (KL - 32), PIN Code: 695008<br>
+                            India
                        </div>
                     </div>
                     
                     <div class="contact-item">
                         <div class="contact-icon">🌐</div>
-                        <div>
-                            <strong>Website:</strong><br>
+                        <div class="contact-details">
+                            <strong>Website:</strong>
                             www.socialnetworksystem.com
                         </div>
                     </div>
                     
                     <div class="contact-item">
                         <div class="contact-icon">🕒</div>
-                        <div>
-                            <strong>Business Hours:</strong><br>
+                        <div class="contact-details">
+                            <strong>Business Hours:</strong>
                             Monday - Friday: 9:00 AM - 6:00 PM<br>
                             Saturday: 9:00 AM - 2:00 PM<br>
                             Sunday: Closed
